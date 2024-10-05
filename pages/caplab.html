@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Page</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #f5f5f5;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .image img {
+            width: 240px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .info {
+            flex: 1;
+            margin-left: 30px;
+            max-width: 600px;
+        }
+
+        .info h1 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .info h2 {
+            font-size: 20px;
+            font-weight: normal;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .info hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin-bottom: 15px;
+        }
+
+        .info strong {
+            font-size: 16px;
+            color: #444;
+        }
+
+        /* .info ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        } */
+
+        .info ul li {
+            margin-bottom: 4px;
+            color: #555;
+        }
+
+        .team-description {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Team grid */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+            padding: 0 50px;
+        }
+
+        .member-card {
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .member-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .member-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .role {
+            font-size: 1.1em;
+            color: rgb(49, 16, 109);
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .member-card p {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .groupmember {
+            font-size: 48px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="image">
+            <img src="Images/Abhishek_Chakraborty.jpg" alt="Prof. Abhishek Chakraborty">
+        </div>
+        <div class="info">
+            <h1>Prof. Abhishek Chakraborty</h1>
+            <h2>Core Faculty | Assistant Professor</h2>
+            <hr>
+            <strong>Research Areas:</strong>
+            <ul>
+                <li>Air pollution control technologies</li>
+                <li>Atmospheric processing of organic aerosols</li>
+                <li>Real-time air pollution monitoring</li>
+                <li>Fog-smog-aerosol interactions</li>
+                <li>Physicochemical characterization of aerosols</li>
+                <li>Real-time characterization and source apportionment of organic aerosols</li>
+                <li>Source apportionment</li>
+            </ul>
+        </div>
+    </div>
+
+    <section>
+        <p class="groupmember">Lab Members</p>
+    </section>
+
+    <section class="team-grid">
+        <!-- Team Members -->
+        <div class="member-card">
+            <img src="Images/debayan.jpg">
+            <h3>Debayan Mandal</h3>
+            <p class="role">PhD Student</p>
+            <p>Indoor Air Pollution in Different Urban Micro-environments</p>
+        </div>
+
+        <div class="member-card">
+            <img src="Images/shruti.jpg">
+            <h3>Shruti Tripathi</h3>
+            <p class="role">PhD Student</p>
+            <p>Secondary Organic Aerosol (SOA) Formation and Characteristics​</p>
+        </div>
+
+        <div class="member-card">
+            <img src="Images/sathish.jpeg">
+            <h3>Sathish Yasarapu</h3>
+            <p class="role">PhD Student</p>
+            <p>Secondary Aerosols: Size distributions and Characteristics</p>
+        </div>
+
+        <div class="member-card">
+            <img src="Images/vidit.jpg">
+            <h3>Vidit</h3>
+            <p class="role">PhD Student</p>
+            <p>Evaluating Secondary Organic Aerosol Formation in Different Environments</p>
+        </div>
+
+        <div class="member-card">
+            <img src="Images/jayaraju.jpg">
+            <h3>Pakki Jayaraju</h3>
+            <p class="role">PhD Student</p>
+            <p>Secondary Organic Aerosols in Urban and Non-Urban Environments</p>
+        </div>
+
+        <div class="member-card">
+            <img src="Images/megha.jpg">
+            <h3>Megha Anand</h3>
+            <p class="role">PhD Student</p>
+            <p>Urban vs Non-Urban Secondary Aerosol Formation: levels and characterisation</p>
+        </div>
+
+        <div class="member-card">
+            <img src="Images/diyalaxmi.jpeg">
+            <h3>Diya Laxmi</h3>
+            <p class="role">PhD Student</p>
+            <p>Understanding SOA Formation in Urban Areas: Mechanisms, Pathways and Influencing parameters</p>
+        </div>
+
+        <div class="member-card">
+            <img src="Images/ashish.jpg">
+            <h3>Ashish</h3>
+            <p class="role">2nd year M.Tech</p>
+            <p></p>
+        </div>
+
+        <div class="member-card">
+            <img src="Images/mansi.jpg">
+            <h3>Mansi Pawar</h3>
+            <p class="role">5th year Dual Degree</p>
+            <p></p>
+        </div>
+
+        <div class="member-card">
+            <img src="Images/atul.jpg">
+            <h3>Atul Chauhan</h3>
+            <p class="role">5th year Dual Degree</p>
+            <p></p>
+        </div>
+
+        <div class="member-card">
+            <img src="Images/riddhi.jpg">
+            <h3>Riddhi Dalvi</h3>
+            <p class="role">2nd year MSc-PhD</p>
+            <p></p>
+        </div>
+
+        <div class="member-card">
+            <img src="Images/satyapriy.jpg">
+            <h3>Satyapriy Sahu</h3>
+            <p class="role">Sr. Project Technical Assitant</p>
+            <p>Work Profile- Technical and Administrative work</p>
+        </div>
+
+        <div class="member-card">
+            <img src="Images/chandan.jpeg">
+            <h3>Chandan Kumar</h3>
+            <p class="role">Sr. Project Technical Assistant</p>
+            <p>Skilled in data analysis of air pollution utlizing machine learning techniques and dashboarding for insightful visualizations.</p>
+        </div>
+    </section>
+</body>
+</html>
