@@ -155,18 +155,67 @@
 
         .flyer img {
             width: 100%;
-            height: 550px;
-            max-height: 600px;
-            max-width: 900px;
+            height: 650px;
+            max-height: 650px;
+            max-width: 1000px;
             border-radius: 10px;
         }
+        
+        /* Key speakers styling */
+        
+        .speakers {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .speaker {
+            flex: 1 1 23%;
+            max-width: 23%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .speaker img {
+            width: 100%;
+            aspect-ratio: 1 / 1; /* Ensures square images */
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        .speaker-info {
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .speaker {
+                flex: 1 1 30%;
+                max-width: 30%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .speaker {
+                flex: 1 1 45%;
+                max-width: 45%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .speaker {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+
     </style>
 </head>
 <body>
 
     <!-- Workshop Flyer Image Section -->
     <div class="flyer">
-        <img src="Images/flyer_new.png" alt="Workshop Flyer">
+        <img src="Images/flyer.png" alt="Workshop Flyer">
     </div>
 
     <!-- Workshop Details Section -->
@@ -191,7 +240,64 @@
             </ul>
         </div>
     </div>
-     
+
+    <!-- speaker -->
+    <div class="container speakers-section">
+        <h2>Key Speakers</h2>
+        <div class="speakers">
+            <div class="speaker">
+                <img src="Images\varun.jpg">
+                <div class="speaker-info">
+                    <h3>Prof. Varun Kumar</h3>
+                    <p>Aarhus University, Denmark</p>
+                </div>
+            </div>
+            <div class="speaker">
+                <img src="Images\deepika.webp">
+                <div class="speaker-info">
+                    <h3>Prof. Deepika Bhattu</h3>
+                    <p>IIT Jodphur, India</p>
+                </div>
+            </div>
+            <div class="speaker">
+                <img src="Images\Praveshchandrashukla.jpg">
+                <div class="speaker-info">
+                    <h3>Prof. Pravesh Chandra Shukla</h3>
+                    <p>IIT Bhilai, India</p>
+                </div>
+            </div>
+            <div class="speaker">
+                <img src="Images\PradhiRajeev.jpg">
+                <div class="speaker-info">
+                    <h3>Prof. Pradhi Rajeev</h3>
+                    <p>IIT Patna, India</p>
+                </div>
+            </div>
+            <div class="speaker">
+                <img src="Images\Abhishek_Chakraborty.jpg">
+                <div class="speaker-info">
+                    <h3>Prof. Abhishek Chakraborty</h3>
+                    <p>IIT Bombay</p>
+                </div>
+            </div>
+            <div class="speaker">
+                <img src="Images\karnvohra.jpg">
+                <div class="speaker-info">
+                    <h3>Dr. Karn Vohra</h3>
+                    <p>University of Birmingham, England</p>
+                </div>
+            </div>
+            <div class="speaker">
+                <img src="Images\deepchandra.jpg">
+                <div class="speaker-info">
+                    <h3>Prof. Deep Chandra Shrivastav</h3>
+                    <p>University of Birmingham, England</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
 
     <!-- Registration Section -->
     <div class="register-section">
