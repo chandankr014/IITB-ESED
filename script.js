@@ -7,6 +7,7 @@ function showContent(section) {
         home: 'pages/home.html',
         location: 'pages/location.html',
         caplab: 'pages/caplab.html',
+        schedule: 'pages/schedule.html',
     };
 
     // Fetch and display the content
